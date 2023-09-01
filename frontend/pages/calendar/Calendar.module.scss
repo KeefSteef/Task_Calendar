@@ -1,0 +1,164 @@
+.calendar {
+  display: flex;
+  * {
+    box-sizing: border-box;
+  }
+}
+.bcg_img {
+  z-index: -1;
+  user-select: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-image: url("/calendarimg.jpeg");
+}
+
+.grid {
+  width: 100vw;
+  padding-left: 80px;
+  padding-bottom: 100px;
+  padding-right: 15px;
+  background: #ffffff;
+  margin-left: 150px;
+}
+
+
+.item {
+  width: 100%;
+  height: 100vh;
+  border: solid 0.5px #D9D9D9;
+}
+
+.subitem {
+  border: solid 0.5px #D9D9D9;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+}
+
+
+.grid_nav {
+  display: flex;
+  align-items: center;
+  padding-bottom: 70px;
+  padding-top: 80px;
+  margin-left: -4px;
+  button {
+    margin: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-family: Eina01, sans-serif;
+    font-size: 20px;
+    background: #FAFAFA;
+    border: solid 2px #F5F4F4;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  h1 {
+    font-weight: 600;
+    max-width: 220px;
+    width: 350px;
+    font-size: 30px;
+    font-family: Eina01, sans-serif;
+  }
+
+  button:nth-child(3){
+    border-radius: 8px;
+    display: flex;
+    margin: 5px;
+    height: auto;
+    padding: 10px 20px;
+    font-family: Eina01, sans-serif;
+    font-weight: 600;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+
+.btns {
+  display: flex;
+  margin-left: 30px;
+}
+
+.times {
+  div{
+    width: 80px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80px;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+    color: grey;
+  }
+
+  div {
+    &:after {
+      position: absolute;
+      right: 0;
+      content:'';
+      height: 80px;
+      //margin-top: 15px;
+      left: 80px;
+      border-bottom: 1.5px solid #dddd;
+    }
+  }
+
+}
+
+.grid_table {
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+}
+
+.dates_container {
+  display: flex;
+  width: 100%;
+  padding-left: 80px;
+  height: 100px;
+  padding-bottom: 30px;
+}
+
+.dates {
+  width: 160px;
+  justify-content: center;
+  display: flex;
+}
+
+.dates_num {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  border: solid 2px #f2f2f2;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background: black;
+  color: #ffffff;
+}
+
+.grid_nav_container {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.select_calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

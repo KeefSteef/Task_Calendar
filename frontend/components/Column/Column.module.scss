@@ -1,0 +1,10 @@
+.grid_column {
+  border-left: solid 1.5px #ddd;
+  width: 160px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+

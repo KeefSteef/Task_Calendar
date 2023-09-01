@@ -1,0 +1,59 @@
+.cardInfo_container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  background: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 15;
+  transition: .25s all;
+  width: 500px;
+  border-radius: 7px;
+}
+
+.cardInfoNav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  gap:20px;
+  align-items: center;
+
+  img, svg {
+    cursor: pointer;
+  }
+}
+
+.title {
+  font-family: "Eina01", sans-serif;
+  font-size: 33px;
+  line-height: 40px;
+}
+
+.info_container {
+  padding: 0px 35px 50px;
+}
+
+.card_info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Eina01", sans-serif;
+  gap: 6px;
+
+  &:nth-child(1) img {
+    filter: invert(1);
+  }
+  p {
+    color: #5F6367;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+}

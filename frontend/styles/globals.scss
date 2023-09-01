@@ -1,0 +1,15 @@
+/*  ====Reset.css and Normalize.css====  */
+
+@import "normalize";
+@import "reset";
+
+/*  ====FONTS====  */
+
+@import "../fonts/Larseit/font";
+@import "../fonts/Eina-01/font";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+
+body {
+  overflow-x: hidden;
+}

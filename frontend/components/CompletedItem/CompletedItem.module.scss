@@ -1,0 +1,19 @@
+.task {
+  gap: 12px;
+  position: relative;
+}
+
+.stick {
+  height: 1px;
+  margin-left: -10px;
+  margin-top: 10px;
+  background: black;
+  opacity: .2;
+  position: absolute;
+}
+
+.monthAndYear {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+}

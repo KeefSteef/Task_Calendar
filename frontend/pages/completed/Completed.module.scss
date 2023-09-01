@@ -1,0 +1,26 @@
+.main {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completed_tasks {
+  padding-top: 120px;
+}
+
+.noTasks_container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -30px;
+  margin-left: 50px;
+  align-items: center;
+  background: rgba(#f7f7f7, 0.8);
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+}

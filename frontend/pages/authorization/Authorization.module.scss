@@ -1,0 +1,16 @@
+.auth_img_container{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+
+.auth_form {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,1);
+}

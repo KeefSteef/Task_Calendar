@@ -1,0 +1,13 @@
+.card_time {
+  display: flex;
+  pointer-events: none;
+  align-items: center;
+  position: absolute;
+  bottom: 8px;
+  font-size: 12px;
+  gap: 4px;
+
+  img {
+    width: 20px;
+  }
+}

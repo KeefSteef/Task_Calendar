@@ -1,0 +1,13 @@
+.dateInput {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  color: #5f6367;
+  padding: 12px 7px;
+  border-radius: 5px;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #f6f6f6;
+  }
+}

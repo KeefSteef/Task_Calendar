@@ -1,0 +1,49 @@
+.card {
+  background: #000;
+  width: 150px;
+  font-size: 15px;
+  flex-direction: column;
+  color: #ffffff;
+  display: flex;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 80px;
+
+
+  * {
+    user-select: none;
+  }
+
+  p {
+    font-family: Eina01, sans-serif;
+    font-weight: 600;
+    pointer-events: none;
+  }
+
+  p:first-child {
+    height: 100px;
+    padding-bottom: 8px;
+  }
+}
+
+.resize {
+  width: 95%;
+  height: 5px;
+  position: absolute;
+  bottom: 0px;
+  cursor: ns-resize;
+
+}
+
+.card_container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

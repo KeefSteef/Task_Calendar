@@ -1,0 +1,42 @@
+.checkbox{
+  width: 13px;
+  height: 13px;
+  border: solid 1px rgba($darkgrey, 0.4);
+  border-radius: 4px;
+  transition: background-color .5s;
+  background: $darkgrey;
+
+}
+
+.checkbox img {
+  display: none;
+  margin-top: 2px;
+  transform: scale(1.1);
+  animation: loadTick .4s ease-in-out;
+}
+
+@keyframes loadTick {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0% 0 0);
+  }
+}
+
+.checkbox_container {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  p {
+    font-weight: 600;
+    font-size: 13px;
+    color: $darkgrey;
+    font-family: Eina01, sans-serif;
+    margin-top: 2px;
+  }
+}

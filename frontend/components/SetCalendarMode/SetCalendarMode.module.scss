@@ -1,0 +1,26 @@
+.selected_mode {
+  text-transform: capitalize;
+  color: #FAFAFA;
+  background: $darkblue;
+  border: solid 2px #F5F4F4;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  height: auto;
+  padding: 15px 30px;
+  font-family: Eina01, sans-serif;
+  font-weight: 600;
+  width: auto;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.selected_mode_container {
+  select {
+    height: 80px;
+    margin-left: 2px;
+    margin-top: 5px;
+  }
+}

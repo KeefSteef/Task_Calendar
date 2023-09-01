@@ -1,0 +1,47 @@
+.register_container {
+  h1 {
+    color: $darkblue;
+    font-size: 35px;
+    font-family: Larsseit, sans-serif;
+    font-weight: 500;
+  }
+
+  label {
+    width: 300px;
+    margin-top: 15px;
+  }
+}
+
+.register_form {
+  margin-top: 20px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 100%;
+  }
+}
+
+.to_log {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Eina01, sans-serif;
+  p {
+    color: rgba($darkgrey, .5);
+  }
+
+  span {
+    cursor: pointer;
+    font-weight: 600;
+    color: $darkblue;
+  }
+}
