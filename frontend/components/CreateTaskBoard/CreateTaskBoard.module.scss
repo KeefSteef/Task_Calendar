@@ -39,8 +39,10 @@
 .boardFormContainer .formElement:last-child {
   display: flex;
   justify-content: flex-end;
+
   .submitBtn {
     padding-bottom: 25px;
+
     button {
       width: 100px;
     }
@@ -49,6 +51,7 @@
 
 .boardForm {
   padding-right: 20px;
+
   textarea {
     resize: none;
     outline: none;
@@ -120,4 +123,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.errorFormElement {
+  input {
+    border-bottom-color: rgba(255, 0, 0, 0.3) !important;
+  }
+
+  span {
+    background: red !important;
+  }
+
+  input::placeholder {
+    color: red;
+  }
 }
