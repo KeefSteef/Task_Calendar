@@ -13,7 +13,7 @@ interface ICreateTaskBoard {
 
 const CreateTaskBoard: FC<ICreateTaskBoard> = ({disableHandler, weekDaysList}) => {
     const [showDatePicker, setShow] = useState(false)
-    const {register, handleSubmit, watch, formState: {errors}} = useForm({mode: 'onSubmit'});
+    const {register, handleSubmit, formState: {errors}} = useForm({mode: 'onSubmit'});
     const {onSubmitTask} = useCreateTask(weekDaysList)
     return (
         <div>
