@@ -3,7 +3,7 @@ import { setContext } from '@apollo/client/link/context'
 
 const SERVER_URI: string = 'http://localhost:5000/graph'
 
-export const createApolloClient = () => {
+const createApolloClient = () => {
   const link = new HttpLink({
     uri: SERVER_URI,
   })
@@ -18,5 +18,12 @@ export const createApolloClient = () => {
   return new ApolloClient({
     link: authLink.concat(link),
     cache: new InMemoryCache(),
+    defaultOptions: {
+      watchQuery: {
+        fetchPolicy: 'network-only',
+      },
+    },
   })
 }
+
+export const apolloClient = createApolloClient()

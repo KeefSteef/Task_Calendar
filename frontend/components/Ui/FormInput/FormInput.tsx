@@ -10,7 +10,13 @@ interface IFormInput {
   isValidMsg?: string
 }
 
-const FormInput: FC<IFormInput> = ({ placeholder, labelText, onChangeHandler, isValidMsg = '', isHidden = false }) => {
+const FormInput: FC<IFormInput> = ({
+  placeholder,
+  labelText,
+  onChangeHandler,
+  isValidMsg = '',
+  isHidden = false,
+}) => {
   return (
     <div className={`${cls.inputContainer} ${isValidMsg && cls.error}`}>
       <label htmlFor={placeholder}>{labelText}</label>

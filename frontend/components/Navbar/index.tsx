@@ -16,7 +16,7 @@ const Navbar: FC = () => {
           style={{ pointerEvents: pathname.includes('/calendar') ? 'none' : 'auto' }}
         >
           <Link href="/calendar" passHref>
-            <a>
+            <a href="/calendar">
               <Image src={'/calendar.svg'} width={60} height={60} alt={'calendar'} />
             </a>
           </Link>

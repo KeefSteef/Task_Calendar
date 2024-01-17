@@ -1,18 +1,18 @@
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { ApolloProvider } from '@apollo/client'
-import { createApolloClient } from '../graphql'
+import { apolloClient, createApolloClient } from '../graphql'
 import Toasts from '../components/Toast/Toasts'
-import {useRouter} from "next/router";
-import Navbar from "../components/Navbar";
+import { useRouter } from 'next/router'
+import Navbar from '../components/Navbar'
 
 function MyApp({ Component, pageProps }: AppProps) {
-    const {pathname} = useRouter()
+  const { pathname } = useRouter()
   return (
-    <ApolloProvider client={createApolloClient()}>
-        {!pathname.includes('authorization') && <Navbar/>}
-        <Component {...pageProps} />
-        <Toasts />
+    <ApolloProvider client={apolloClient}>
+      {!pathname.includes('authorization') && <Navbar />}
+      <Component {...pageProps} />
+      <Toasts />
     </ApolloProvider>
   )
 }

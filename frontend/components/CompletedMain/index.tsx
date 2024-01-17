@@ -8,6 +8,7 @@ import NoTaskIcon from '../NoTaskIcon'
 
 const CompletedMain: FC = () => {
   const [filterStateData, setState] = useCompletedTasks()
+
   const getFilterData = (value = ''): void => {
     const newData = filterStateData.map((section) => {
       if (!section.disable && section.tasks.some((task) => task.name.includes(value))) {
